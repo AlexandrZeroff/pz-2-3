@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="index.js"></script>
+    <title>PZ_2_3 #1</title>
+</head>
+
+<body>
+    <section id="imgs">
+        <h2>Click to see alert</h2>
+        <div class="img-container">
+            <img src="img/image0.png" alt="Some warm beer" onclick="showLinkAlert()">
+            <img src="img/image0.png" alt="Some warm beer" onclick="showLinkAlert()">
+            <img src="img/image0.png" alt="Some warm beer" onclick="showLinkAlert()">
+        </div>
+    </section>
+    <section id="imgs-rotate">
+        <h2>Click to rotate image</h2>
+        <div class="img-container">
+            <img src="img/image0.png" alt="Some warm beer" id="img-rotate-1" onclick="rotateImg1()">
+            <img src="img/image0.png" alt="Some warm beer" id="img-rotate-2" onclick="rotateImg2()">
+            <img src="img/image0.png" alt="Some warm beer" id="img-rotate-3" onclick="rotateImg3()">
+        </div>
+    </section>
+    <section id="links">
+        <h2>Hover mouse on links</h2>
+        <div class="img-container mt-5">
+            <div>
+                <a href="www.google.com.ua" onmouseover="changeText(this)" onmouseleave="returnText()">Hover me</a>
+            </div>
+            <div>
+                <a href="www.google.com.ua" onmouseover="changeText(this)" onmouseleave="returnText()">Hover me</a>
+            </div>
+            <div>
+                <a href="www.google.com.ua" onmouseover="changeText(this)" onmouseleave="returnText()">Hover me</a>
+            </div>
+        </div>
+        <p id="text">Some text to test</p>
+    </section>
+    <section id="form">
+        <h2>Submit the form</h2>
+        <form class="form-signin" name="testForm" onsubmit="validateForm()">
+            <h2>Fill the fields</h2>
+            <input id="firstname" type="text" class="form-control" name="firstname" placeholder="First name" required=""
+                autofocus="" /><br>
+            <span id="span-first"></span><br/>  
+            <input id="lastname" type="text" class="form-control" name="lastname" placeholder="Last name" required="" /><br>
+            <span id="span-lasts"></span><br/> 
+            <input id="ageinput" type="text" class="form-control" name="age" placeholder="Age" required="" /><br>
+            <span id="span-age"></span><br/> 
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>

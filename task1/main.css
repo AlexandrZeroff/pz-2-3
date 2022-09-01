@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#imgs h2,
+#imgs-rotate h2,
+#links h2,
+#form h2 {
+  text-align: center;
+}
+#imgs p,
+#imgs-rotate p,
+#links p,
+#form p {
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.img-container img {
+  width: 200px;
+  height: 300px;
+}
+
+.mt-5 {
+  margin-top: 5vh;
+}/*# sourceMappingURL=main.css.map */

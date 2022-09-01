@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+#imgs,
+#imgs-rotate,
+#links,
+#form {
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.img-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  img {
+    width: 200px;
+    height: 300px;
+  }
+}
+
+.mt-5 {
+  margin-top: 5vh;
+}
+
+.form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  @include box-sizing(border-box);
+
+  &:focus {
+    z-index: 2;
+  }
+}
+
+input[type='text'] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.form-signin{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-error{
+  border-color: red;
+}
