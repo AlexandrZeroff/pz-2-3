@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!--     <script src="index.js"></script> -->
+    <title>Task 2</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-centered">
+            <button id="btn" type="button">Update</button>
+        </div>
+    </main>
+</body>
+<script>
+    let index = 1;
+
+    const data = ['Update', 'Delete', 'Pending']
+    const colors = ['#5db85c', '#d9534f', '#f0ad4e']
+
+    document.getElementById("btn").addEventListener('click', function onClick() {
+        console.log("function")
+        btn.style.backgroundColor = colors[index];
+        btn.innerHTML = data[index]
+
+        index = index >= colors.length - 1 ? 0 : index + 1;
+    });
+</script>
+
+</html>
